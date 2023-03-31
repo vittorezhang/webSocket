@@ -21,7 +21,7 @@
             line-height: 40px;
             font-size: 20px;
             border-radius: 5px;
-            border: 1px solid #B3D33F;
+            border: 1px solid #3fd346;
         }
 
         .form {
@@ -39,7 +39,7 @@
             font-size: 20px;
             border-radius: 5px;
             border: none;
-            background: #B3D33F;
+            background: #3fd346;
             color: #fff;
         }
     </style>
@@ -59,7 +59,9 @@
         var oInput = document.getElementById('message');
         var ws = null;
         oConnect.onclick = function () {
-            ws = new WebSocket('ws://localhost:5000');
+            // location.hostname
+            ws = new WebSocket('ws://localhost:3000');
+            // ws = new WebSocket(`wss://${location.hostname}:3000`);
             ws.onopen = function () {
                 oUl.innerHTML += "<li>客户端已连接</li>";
             }
