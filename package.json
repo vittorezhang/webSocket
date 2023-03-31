@@ -1,0 +1,23 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "webSocket原先Api搭建的WebSocket聊天demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittorezhang/webSocket.git"
+  },
+  "keywords": [
+    "webSocket",
+    "imChat"
+  ],
+  "author": "Vittore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vittorezhang/webSocket/issues"
+  },
+  "homepage": "https://github.com/vittorezhang/webSocket#readme"
+}
