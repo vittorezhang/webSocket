@@ -2,9 +2,9 @@ var app = require('http').createServer(handler)
 var ws = require('nodejs-websocket')
 var fs = require('fs')
 const { getNetworkIPv4 } = require('./utils')
-const PORT = 80
+const PORT = 3008
 
-function handler(req, res) {
+function handler (req, res) {    
 	fs.readFile(__dirname + '/client.html', function (err, data) {
 		if (err) {
 			res.writeHead(500)
@@ -24,7 +24,7 @@ var server = ws
 			console.log('connection closed')
 		})
 	})
-	.listen(5000)
+	.listen(3000)
 
 function broadcast(server, msg) {
 	server.connections.forEach(function (conn) {
