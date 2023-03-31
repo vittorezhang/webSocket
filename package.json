@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/vittorezhang/webSocket/issues"
   },
-  "homepage": "https://github.com/vittorezhang/webSocket#readme"
+  "homepage": "https://github.com/vittorezhang/webSocket#readme",
+  "dependencies": {
+    "nodejs-websocket": "^1.7.2",
+    "os": "^0.1.2"
+  }
 }
